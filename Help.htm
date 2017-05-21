@@ -1,0 +1,686 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Help.files/filelist.xml">
+<link rel=Edit-Time-Data href="Help.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title> Программа минимизатор предназначена для минимизации логических функций
+методом Квайна – Мак-Класки</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>kliuoler</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>80</o:TotalTime>
+  <o:Created>2011-01-24T10:10:00Z</o:Created>
+  <o:LastSaved>2011-01-30T08:24:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>742</o:Words>
+  <o:Characters>4232</o:Characters>
+  <o:Company>Home</o:Company>
+  <o:Lines>35</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4965</o:CharactersWithSpaces>
+  <o:Version>11.6568</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:11.9pt 42.55pt 12.2pt 3.0cm;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1214076823;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1575643124 -1309525012 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-tab-stop:-53.25pt;
+	mso-level-number-position:left;
+	margin-left:-53.25pt;
+	text-indent:-18.75pt;}
+@list l0:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="6146"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt;tab-stops:620.35pt'><span style='font-size:10.0pt'>Программа «<span
+class=SpellE><b style='mso-bidi-font-weight:normal'><span style='color:#339966'>Минимизатор</span></b></span>»
+предназначена для минимизации логических функций методом <span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span style='color:#339966'>Квайна</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='color:#339966'> – <span
+class=SpellE>Мак-Класки</span></span></b>. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Входная функция может содержать имена
+переменных, скобки и знаки логических операций. </span><span lang=EN-US
+style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Имена переменных состоят из одного символа
+латинского алфавита. Количество переменных не должно быть более 5.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span><b
+style='mso-bidi-font-weight:normal'><span style='color:#339966'>Реализованные
+операции</span></b>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-7.5pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:18.0pt;
+mso-list:l0 level1 lfo2;tab-stops:list -53.25pt'><![if !supportLists]><span
+style='font-size:10.0pt;color:black'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;color:black'>Логическое отрицание – </span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;color:#339966'>символ
+«!»,</span></b><span style='font-size:10.0pt;color:black'> стоящий перед именем
+переменной.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-7.5pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:18.0pt;
+mso-list:l0 level1 lfo2;tab-stops:list -53.25pt'><![if !supportLists]><span
+style='font-size:10.0pt;color:black'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;color:black'>Конъюнкция<span
+style='mso-spacerun:yes'>                 </span>– </span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;color:#339966'>символ «</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:10.0pt;
+color:#339966;mso-ansi-language:EN-US'>*</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;color:#339966'>».</span></b><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-7.5pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:18.0pt;
+mso-list:l0 level1 lfo2;tab-stops:list -53.25pt'><![if !supportLists]><span
+style='font-size:10.0pt;color:black'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;color:black'>Дизъюнкция<span
+style='mso-spacerun:yes'>                 </span>– </span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;color:#339966'>символ «</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:10.0pt;
+color:#339966;mso-ansi-language:EN-US'>+</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;color:#339966'>».</span></b><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Пример функции – (</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'>a</span><span
+style='font-size:10.0pt'>+!</span><span lang=EN-US style='font-size:10.0pt;
+mso-ansi-language:EN-US'>b</span><span style='font-size:10.0pt'>)*(!</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'>a</span><span
+style='font-size:10.0pt'>+</span><span lang=EN-US style='font-size:10.0pt;
+mso-ansi-language:EN-US'>b</span><span style='font-size:10.0pt'>+</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:10.0pt'>). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Ниже можно видеть основную форму
+программы. Форма содержит меню, панель инструментов и окно</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>с полосой скроллинга, в <span
+class=GramE>которое</span> выводятся результаты преобразований функции.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Панель инструментов состоит из кнопок, фотографий, полей ввода
+функции </span></b><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:10.0pt;color:#339966;mso-ansi-language:EN-US'>OPN</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;color:#339966'>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span></span><span
+style='font-size:5.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><u><span style='font-size:10.0pt;
+color:#339966'>Кнопки</span></u></b><span style='font-size:10.0pt'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Трансляция</span></b><span style='font-size:10.0pt'> – при
+активации кнопки функция переводится в обратную польскую нотацию; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Таблица Истинности</span></b><span style='font-size:10.0pt'> –
+строится таблица истинности функции;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Минимизация</span></b><span style='font-size:10.0pt'> –
+производится минимизация функции в соответствии с алгоритмом <span
+class=SpellE>Квайна</span> – <span class=SpellE>Мак-Класки</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Очистка</span></b><span style='font-size:10.0pt'> – производится
+очистка формы;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Выход</span></b><span style='font-size:10.0pt'> – производится
+выход из программы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><u><span style='font-size:10.0pt;
+color:#339966'>Фотографии</span></u></b><span style='font-size:10.0pt'>
+разработчиков алгоритма <b style='mso-bidi-font-weight:normal'>– <span
+class=SpellE><span style='color:#339966'>Уилларда</span></span><span
+style='color:#339966'> Ван <span class=SpellE>Орман</span> <span class=SpellE>Квайна</span>
+и Эдварда <span class=SpellE>Мак-Класки</span></span></b>. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><u><span style='font-size:10.0pt;
+color:#339966'>Поле</span></u></b><span style='font-size:10.0pt'> ввода функции
+помечено надписью «</span><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:10.0pt;color:#339966;mso-ansi-language:EN-US'>f</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:10.0pt;
+color:#339966'> </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;color:#339966'>=»</span></b><span style='font-size:
+10.0pt'>, поле вывода обратной польской записи, помечено надписью «</span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:10.0pt;
+color:#339966;mso-ansi-language:EN-US'>PN</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;color:#339966'>=».</span></b><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Все элементы панели управления имеют
+подсказки, которые можно прочитать при наведении на объект курсора мышки.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:454.5pt;
+ height:363pt'>
+ <v:imagedata src="Help.files/image001.png" o:title="FORM1"/>
+</v:shape><![endif]--><![if !vml]><img width=606 height=484
+src="Help.files/image002.jpg" v:shapes="_x0000_i1025"><![endif]><span
+style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Входная функция вводится в поле ввода</span></b><span
+style='font-size:10.0pt'>, далее активируется кнопка «<b style='mso-bidi-font-weight:
+normal'><span style='color:#339966'>Трансляция</span></b>». </span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Если во входной функции нет ошибок, то
+программа выведет в поле </span><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-size:10.0pt;color:#339966;mso-ansi-language:EN-US'>PN</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;color:#339966'>,</span></b><span
+style='font-size:10.0pt'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>на панели инструментов, обратную
+польскую нотацию функции. Если же во входной функции есть ошибки,</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>то будет сгенерировано окно с сообщением
+об ошибке. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Список сообщений об ошибке во входной функции:</span></b><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt;color:#339966'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>формула начинается со знака операции </span></b><span
+style='font-size:10.0pt;color:#339966'>«<b style='mso-bidi-font-weight:normal'>+</b>»
+<b style='mso-bidi-font-weight:normal'>или</b> «<b style='mso-bidi-font-weight:
+normal'>*</b>»,<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>размер переменной больше двух символов,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>два символа операции следуют друг за другом,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>два символа операции «!» следуют друг за другом,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>недопустимый символ,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>неравное кол-во открывающих и закрывающих скобок,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>превышено кол-во переменных,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Нет функции для минимизации.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Если в поле «</span><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:10.0pt;color:#339966;mso-ansi-language:
+EN-US'>PN</span></b><span style='font-size:10.0pt'>» появилась обратная
+польская запись функции, то можно активировать кнопку «<b style='mso-bidi-font-weight:
+normal'><span style='color:#339966'>Таблица истинности»</span></b>. </span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>В окне программы появится таблица
+истинности. Столбцам будут присвоены имена переменных, </span><span lang=EN-US
+style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>строкам – номера двоичных наборов
+значений переменных, полю «</span><span lang=EN-US style='font-size:10.0pt;
+mso-ansi-language:EN-US'>function</span><span style='font-size:10.0pt'>»
+значение функции при данном наборе.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Далее можно активировать кнопку <span
+style='color:#339966'>«<b style='mso-bidi-font-weight:normal'>Минимизация»</b></span>.
+В результате работы программы на форму будут выведены таблицы, </span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify'><span
+style='font-size:10.0pt'><span style='mso-spacerun:yes'>        </span>являющиеся
+этапами минимизации функции в соответствии с алгоритмом <span class=SpellE>Квайна</span>
+– <span class=SpellE>Мак-Класки</span>.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>В первой таблице – «<b style='mso-bidi-font-weight:
+normal'><span style='color:#339966'>Сортировка термов по группам» </span></b>–<b
+style='mso-bidi-font-weight:normal'><span style='color:#339966'> </span></b>размещаются
+<span class=SpellE>конституенты</span> функции и разбиваются </span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>по группам в соответствии с кол-вом
+единиц в <span class=SpellE>конституенте</span>.<span
+style='mso-spacerun:yes'>  </span>Таблица состоит из столбцов: «<b
+style='mso-bidi-font-weight:normal'>номер строки</b>», </span><span lang=EN-US
+style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>«<b style='mso-bidi-font-weight:normal'>кол-во
+1</b>» в <span class=SpellE>конституенте</span>, значения «<span class=SpellE><b
+style='mso-bidi-font-weight:normal'>минитерма</b></span>» и поля «<span
+class=SpellE><b style='mso-bidi-font-weight:normal'>склевание</b></span>». <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Знак «+» в поле «склеивание» означает,
+что данный <span class=SpellE>минитерм</span> может быть склеен с каким-то
+термом из <span style='mso-spacerun:yes'>  </span>другой группы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:467.25pt;height:372.75pt'>
+ <v:imagedata src="Help.files/image003.png" o:title="FORM2"/>
+</v:shape><![endif]--><![if !vml]><img width=623 height=497
+src="Help.files/image004.jpg" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Форма может прокручиваться как при
+помощи полосы прокрутки, так и при помощи колеса мышки.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Далее программа генерирует несколько
+таблиц, кол-во которых зависит от самой функции. </span><span lang=EN-US
+style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Таблицы помечены заголовком – <b
+style='mso-bidi-font-weight:normal'><span style='color:#339966'>«Склеивание
+термов»</span></b>. </span><span lang=EN-US style='font-size:10.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Таблицы состоят из столбцов: <b
+style='mso-bidi-font-weight:normal'>«номер строки»</b>, куда записаны номера
+строк таблицы истинности, которые участвовали в склеивании термов;</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span lang=EN-US style='font-size:10.0pt'><span
+style='mso-spacerun:yes'> </span></span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'>«кол-во единиц</span></b><span style='font-size:10.0pt'>»
+в <span class=SpellE>минитерме</span>; значения <b style='mso-bidi-font-weight:
+normal'>«<span class=SpellE>минитерма</span>»</b> и поля <b style='mso-bidi-font-weight:
+normal'>«склеивание»</b>. Знак «–»<span style='mso-spacerun:yes'>  </span><span
+class=GramE>в </span>поле «склеивание» означает, что данный <span class=SpellE>минитерм</span></span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'> </span>больше не может быть <span class=GramE>склеен</span>
+с каким-либо другим <span class=SpellE>минитермом</span> из другой группы.</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'> </span>Если все позиции столбца содержат символ<span
+class=GramE> «–», </span>это означает, что все термы функции склеены. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Далее программа генерирует <span
+class=SpellE><b style='mso-bidi-font-weight:normal'>импликантную</b></span><b
+style='mso-bidi-font-weight:normal'> матрицу</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:467.25pt;height:372.75pt'>
+ <v:imagedata src="Help.files/image005.png" o:title="FORM3"/>
+</v:shape><![endif]--><![if !vml]><img width=623 height=497
+src="Help.files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;color:#339966'>Импликантная</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;color:#339966'>
+таблица</span></b><span style='font-size:10.0pt'> состоит из столбцов <b
+style='mso-bidi-font-weight:normal'>«номера <span class=SpellE>конституент</span>»</b>
+функции, записанных в заголовках столбцов </span><span lang=EN-US
+style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>в двоичном и десятичном виде, и строк, в
+которые записаны все <b style='mso-bidi-font-weight:normal'>несокращенные <span
+class=SpellE>минитермы</span> – <span class=SpellE>импликанты</span>,</b> т.е.
+все <span class=SpellE>минитермы</span> таблиц минимизации,</span><span
+lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span><span
+class=GramE>помеченные</span> знаком минус в поле склеивание.<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>Минитермы</span>,
+дублирующие друг друга, записываются в <span class=SpellE>импликантную</span>
+матрицу один раз.</span><span lang=EN-US style='font-size:10.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'> </span>Знак <b style='mso-bidi-font-weight:normal'>«крестик»</b>
+ставится в таблицу в том случае, если <span class=SpellE>импликанта</span>
+входит <span class=GramE>в</span> данную <span class=SpellE>конституенту</span>.
+</span><span lang=EN-US style='font-size:10.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span class=GramE><span style='font-size:10.0pt'>Синим цветом в таблице
+помечаются</span></span><span style='font-size:10.0pt'> существенные <span
+class=SpellE>импликанты</span>, зеленым несущественные <span class=SpellE>импликанты</span>,
+входящие в ответ.</span><span lang=EN-US style='font-size:10.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span lang=EN-US style='font-size:10.0pt'><span
+style='mso-spacerun:yes'> </span></span><span style='font-size:10.0pt'>Т.е.
+цветом выделяется минимальное покрытие <span class=SpellE>импликантной</span>
+матрицы. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>В последних строчках формы программа
+записывает <b style='mso-bidi-font-weight:normal'><span style='color:#339966'>результат
+минимизации</span></b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Программа также работает с меню. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>Разделы меню:</span></b><span style='font-size:10.0pt'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'>Файл (подразделы:</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt'> <span
+class=GramE>«Прочитать функцию», «Записать функцию», «Записать ответ»);</span></span></b><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span class=GramE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'>Помощь (подразделы:</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt'> <span
+class=GramE>«Помощь» и «О программе»).</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Функция может быть сохранена на диске и
+прочитана с диска. Формат файла текстовый.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Файл ответа также текстовый, состоит из
+строки функции и результата его минимизации.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:10.0pt'>Раздел меню «о программе» генерирует
+окно с краткой информацией о программе и авторе. Раздел справка вызывает данную
+справку.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><span style='font-size:5.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+color:#339966'>В папке формулы хранится некоторое кол-во формул, по которых
+отлаживалась программа.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-right:-7.5pt;text-align:justify;text-indent:
+18.0pt'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
